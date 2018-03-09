@@ -19,7 +19,7 @@ void serialOutputWhenBeatHappens(){
  if (serialVisual == true){            //  Code to Make the Serial Monitor Visualizer Work
     Serial.print("*** Heart-Beat Happened *** ");  //ASCII Art Madness
     Serial.print("BPM: ");
-     Genotronex.println("HEART RATE IS  ");
+     //Genotronex.println("HEART RATE IS  ");
       Genotronex.println(BPM);
     Serial.print(BPM);
     Serial.print("  ");

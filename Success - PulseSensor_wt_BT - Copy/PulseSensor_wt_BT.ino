@@ -51,7 +51,7 @@ void setup(){
    // AND APPLY THAT VOLTAGE TO THE A-REF PIN
 //   analogReference(EXTERNAL);   
   Genotronex.begin(9600);
-  Genotronex.println("Bluetooth On please press 1 or 0 blink LED ..");
+  //Genotronex.println("Bluetooth On please press 1 or 0 blink LED ..");
   pinMode(ledpin,OUTPUT);
   
 }
@@ -81,11 +81,11 @@ void loop(){
 BluetoothData=Genotronex.read();
    if(BluetoothData=='1'){   // if number 1 pressed ....
    digitalWrite(ledpin,1);
-   Genotronex.println("LED  On D12 ON ! ");
+   //Genotronex.println("LED  On D12 ON ! ");
    }
   if (BluetoothData=='0'){// if number 0 pressed ....
   digitalWrite(ledpin,0);
-   Genotronex.println("LED  On D12 Off ! ");
+   //Genotronex.println("LED  On D12 Off ! ");
   }
 }
 
